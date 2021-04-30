@@ -1,0 +1,33 @@
+//EJERCICIO 2
+
+    //Crear una clase llamada User que implemente una interface llamada IUser con una funcion que devuelva un objeto usuario.
+
+    //La funcion debe tener las siguientes consideraciones.
+    //* Recibir como parametro un correo.
+    //* Buscar en la constante directory el correo y devolver el id.
+    //* Con el id que se haya obtenido de la constante directory. Buscar en la constante users el usurio con ese mismo id.
+    //* El objeto user debe contener los siguienres atributos
+    //- id
+    //- name. name + lastName
+    //- dateBirth. en formato dd/mm/yyyy
+    //- yearsOld. Calcular a partir de la fecha, del día, del mes y del año de nacimiento
+
+    {
+        class User implements IUser {
+            constructor(public email:string){
+                this.email = email;
+            }
+        }
+function ObtenerCorreo (email:string){
+    var DirectoryA=[];
+    var v=[];
+    directory.forEach(directory=> {
+        if (directory.email == email){
+            v = {
+               id: directory.id; 
+            };
+        }
+    }
+        )
+}
+
